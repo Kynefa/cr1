@@ -18,14 +18,14 @@ function content_load(buttonId) {
                 Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
             </p>
             <h3>ЛР_1:</h3>
-            <a href ="https://github.com/OleksiiAnokhin2023/IS-31_Anokhin_laba_1.git" target="_blank">репозиторій</a> і
-            <a href ="https://oleksiianokhin2023.github.io/IS-31_Anokhin_laba_1" target="_blank">живий сайт</a>
+            <a href ="" target="_blank">репозиторій</a> і
+            <a href ="" target="_blank">живий сайт</a>
             <h3>СР_1:</h3>
-            <a href ="https://github.com/OleksiiAnokhin2023/IS-31_Anokhin_sr1.git" target="_blank">репозиторій</a> і
-            <a href ="https://oleksiianokhin2023.github.io/IS-31_Anokhin_sr1" target="_blank">живий сайт</a>
+            <a href ="" target="_blank">репозиторій</a> і
+            <a href ="" target="_blank">живий сайт</a>
             <h3>Звіт_html:</h3>
-            <a href ="https://github.com/OleksiiAnokhin2023/IS-31_Anokhin_report_html.git" target="_blank">репозиторій</a> і
-            <a href ="https://oleksiianokhin2023.github.io/IS-31_Anokhin_report_html" target="_blank">живий сайт</a>
+            <a href ="" target="_blank">репозиторій</a> і
+            <a href ="" target="_blank">живий сайт</a>
             `;
             break;
         case 'btn2':
