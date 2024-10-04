@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+    </header>
+    <main>
+        <section class="header">
+            <div>  
+                <h1>ЗВІТ З ЛАБОРАТОРНИХ РОБІТ <br> З ДИСЦИПЛІНИ "ІНТЕРНЕТ ТЕХНОЛОГІЇ ТА ПРОЕКТУВАННЯ WEB-ЗАСТОСУВАНЬ"</h1>
+                <p>Студентка групи IC-31 Соловйова Катерина Дмитрівна</p>
+            </div>    
+            <img src="фото.jpg" alt="" id="student-photo">
+        </section>
+
+        <section class="all_labs">
+            <button onclick="loadLab(1)">Лабораторна робота №1</button>
+            <button onclick="loadLab(2)">Лабораторна робота №2</button>
+            <button onclick="loadLab(3)">Лабораторна робота №3</button>
+            <button onclick="loadLab(4)">Лабораторна робота №4</button>
+            <button onclick="loadLab(5)">Лабораторна робота №5</button>
+            <button onclick="loadLab(6)">Лабораторна робота №6</button>
+            <button onclick="loadLab(7)">Лабораторна робота №7</button>
+            <button onclick="loadLab(8)">Лабораторна робота №8</button>
+            <button onclick="loadLab(9)">Лабораторна робота №9</button>
+        </section>
+
+        <div class="main_part">
+            <aside class="sidebar">
+                <ul id="lab-menu">
+                    <li><button id="btn1" onclick="showDescription(1)">Опис предметного середовища</button></li>
+                    <li><button id="btn2" onclick="showDescription(2)">Тема Мета Місце розташування лабораторної роботи</button></li>
+                    <li><button id="btn3" onclick="showDescription(3)">СТРУКТУРА ДОКУМЕНТА</button></li>
+                    <li><button id="btn4" onclick="showDescription(4)">HTML код ТАБЛИЦЬ</button></li>
+                    <li><button id="btn5" onclick="showDescription(5)">HTML код ФОРМИ</button></li>
+                    <li><button id="btn6" onclick="showDescription(6)">HTML код ЗОБРАЖЕННЯ</button></li>
+                    <li><button id="btn7" onclick="showDescription(7)">ВИСНОВКИ</button></li>
+                </ul>
+            </aside>
+
+            <section class="output">
+                <p>Місце виведення інформації</p>
+            </section>
+        </div>
+    </main>
+    <footer><a href=""></a></footer>
+    <script src="main.js"></script>
+</body>
+</html>

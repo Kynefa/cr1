@@ -1,0 +1,164 @@
+/*.text {
+    display: flex;
+    justify-content: center; /* Центрує текст */
+   
+  /*  height: 170px; /* Висота секції */
+    /*align-items: center; /* Вирівнює текст по вертикалі */
+    
+  /*}
+
+  /* Центруємо текст */
+  /*.text .content {
+    text-align: center; /* Центрує текст всередині контейнера */
+  /*}
+
+  /* Абсолютне позиціонування зображення праворуч */
+  /*.text img {
+    position: absolute;
+    right: 20px; 
+    max-width: 135px; 
+    height: auto; 
+  }
+.header{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    width: 100%;
+    height: 100px;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box; 
+    
+}
+.leftMenu{
+    width: 25%;
+    height: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: px;
+    
+}
+.Item {
+ 
+    text-align: center;
+    border: 2px solid rgb(72, 255, 0);
+    width: 100%;
+    border-radius: 7px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.Item2{
+    text-align: center;
+    border: 2px solid rgb(72, 255, 0);
+    width: 90%;
+    margin-top: 10px;
+    height: 13%;
+    border-radius: 7px;
+    margin-left: 15px;
+}
+
+.card{
+    margin-top: 14px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+    height: 540px;
+    border: 1px solid black;
+}
+.main{
+    width: 100%;
+    margin-top: 5px;
+    display: flex;
+}
+*/
+.header {
+    text-align: center;
+    font-size: larger;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+    gap: 0px;
+    margin-bottom: 15px;
+}
+.all_labs{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr); 
+    gap: 10px; 
+   
+}
+
+button{
+    margin-bottom: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 5px solid #69ff64;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.all_labs button.active{
+    background-color: #8cffc5;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #78ffa5;
+    font-weight: bold;
+}
+button:active {
+    transform: scale(0.95);
+}
+/* Колір кнопок при наведенні */
+.sidebar button:hover {
+    background-color: #9bffb9; /* Колір при наведенні */
+}
+.sidebar button.active{
+    background-color: #8cffc5;
+    font-weight: bold;
+}
+.sidebar button:active {
+    transform: scale(0.95);
+}
+#student-photo {
+    border: 2px dashed #ffffff;
+    width: 150px;
+    height: 190px;
+    float: right;
+}
+
+.sidebar {
+    margin: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar button {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+
+.output {
+    border: 2px solid #49ff62;
+    padding: 10px;
+    height: 300px; 
+    overflow-y: auto;
+    background-color: #ffffff;
+    margin-top: 60px;
+    font-size: 20px;
+    color: #000000;
+}
+
+.main_part {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
