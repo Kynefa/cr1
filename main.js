@@ -32,7 +32,22 @@ function loadLab(labNumber) {
             <li><button id="btn9" onclick="showDescription(9)">Висновки до ЛР№2</button></li>
         `;
     }
-    
+    else if (labNumber === 3) {
+        menu.innerHTML = `
+            <li><button id="btn1" onclick="showDescription(1)">Тема, Мета ЛР3, Місце розташування сайту, звіту</button></li>
+            <li><button id="btn2" onclick="showDescription(2)">Завдання№1 Зовнішній вигляд макету</button></li>
+            <li><button id="btn3" onclick="showDescription(3)">Завдання №2</button></li>
+            <li><button id="btn4" onclick="showDescription(4)">Фіксована таблична верстка</button></li>
+            <li><button id="btn5" onclick="showDescription(5)">Гумова таблична верстка</button></li>
+            <li><button id="btn6" onclick="showDescription(6)">Фіксована блокова верстка</button></li>
+            <li><button id="btn7" onclick="showDescription(7)">Гумова блокова верстка</button></li>
+            <li><button id="btn8" onclick="showDescription(8)">Завдання №3 FLEXBOX</button></li>
+             <li><button id="btn8" onclick="showDescription(9)">Скріншот сторінки (FLEXBOX)</button></li>
+              <li><button id="btn8" onclick="showDescription(10)">HTML код (FLEXBOX)</button></li>
+               <li><button id="btn8" onclick="showDescription(11)">CSS код (FLEXBOX)</button></li>
+            <li><button id="btn9" onclick="showDescription(12)">Висновки</button></li>
+        `;
+    }
     // Додавання активного класу до натиснутої кнопки
     const labButtons = document.querySelectorAll('.all_labs button');
     labButtons.forEach(button => {

@@ -17,26 +17,26 @@ function content_load(buttonId) {
                 Мета: придбати практичні навички роботи з HTML-документом, таблицями, зображеннями, посиланнями, списками, формами. 
                 Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
             </p>
-            <h3>ЛР_1:</h3>
-            <a href ="" target="_blank">репозиторій</a> і
-            <a href ="" target="_blank">живий сайт</a>
-            <h3>СР_1:</h3>
-            <a href ="" target="_blank">репозиторій</a> і
-            <a href ="" target="_blank">живий сайт</a>
+            <h3>ЛР_2:</h3>
+            <a href ="https://github.com/Kynefa/proj1" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5500/index.html" target="_blank">живий сайт</a>
+            <h3>СР_2:</h3>
+            <a href ="https://github.com/Kynefa/Cp2" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5503/index.html" target="_blank">живий сайт</a>
             <h3>Звіт_html:</h3>
-            <a href ="" target="_blank">репозиторій</a> і
-            <a href ="" target="_blank">живий сайт</a>
+            <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a>
             `;
             break;
         case 'btn2':
             content = `
             <h2>Способи підключення стилів</h2>
             <p>
-                Є кілька способів підключення CSS-стилів до HTML-документа:
                 <ul>
-                    <li>Вбудовані стилі: за допомогою атрибута <code>style</code> у HTML-елементах.<a class="dropdown menu" style="text-decoration: none; color: rgb(8, 87, 41);" href="#" role="button" id="categoryDropdown" data-bs-toggle="dropdown" aria-expanded="false"></li>
-                    <li>Внутрішні стилі: всередині <code>&lt;style&gt;</code> у заголовку HTML-документа.</li>
-                    <li>Зовнішні стилі: через атрибут <code>link</code> у заголовку для підключення CSS-файлу.</li>
+                   <li>Вбудовані стилі: за допомогою атрибута <code>style</code> у HTML-елементах.<br>
+    &lt;a class="dropdown menu" style="text-decoration: none; color: rgb(8, 87, 41);" href="#" role="button" id="categoryDropdown"&gt;&lt;/a&gt;</li>
+<li>Внутрішні стилі: всередині <code>&lt;style&gt;</code> у заголовку HTML-документа.</li>
+<li>Зовнішні стилі: через атрибут <code>&lt;link&gt;</code> у заголовку для підключення CSS-файлу.</li>
                 </ul>
             </p>
             `;
@@ -138,7 +138,9 @@ font-size: large;
             content = `
             <h2>Інші селектори</h2>
             <p>
-                Існують також комбіновані селектори, псевдокласи, псевдоелементи та інші, які дозволяють більш точно вибирати елементи.
+                a[href^="https://"] {<br>
+    color: rgb(38, 0, 255); <br>
+    text-decoration: underline; <br>
             </p>
             `;
             break;

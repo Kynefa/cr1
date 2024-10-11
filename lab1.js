@@ -7,8 +7,8 @@ function content_load(buttonId) {
     switch (buttonId) {
         case 'btn1':
             content = `
-            <h1> Магазин рослин </h1>
-            <p style="padding:5px;">   Основою бізнес-логіки є інтерактивна платформа, яка надає користувачам можливість вибору різноманітних рослин, а також пропонує фільтрацію за ціною, типом рослин та іншими параметрами.
+            <p style="padding:5px;"> Тема: Магазин рослин<br><p>
+             Мета сайту: метою цього веб-сайту є створення зручної та доступної платформи для покупців, які шукають різноманітні види рослин.<br><p> Веб-сайт рослин пропонує зручний інтерфейс. Основою бізнес-логіки є інтерактивна платформа, яка надає користувачам можливість вибору різноманітних рослин, а також пропонує фільтрацію за ціною, типом рослин та іншими параметрами.
 
 Кожен товар на сайті буде представлений зі зображенням і детальним описом, що дозволить покупцям отримати повну інформацію про продукт перед покупкою. Щоб покращити користувацький досвід, буде додано можливість додавати товари до кошика і видаляти їх звідти в будь-який момент. Також користувачі зможуть залишати відгуки про куплені рослини, що сприятиме формуванню довіри до продукції та дозволить іншим покупцям обирати на основі реальних вражень.</p>
        </li>`;
@@ -19,11 +19,11 @@ function content_load(buttonId) {
 ЛР_1:
 
     <a href ="https://github.com/Kynefa/proj1" target="_blank">репозиторій</a>  і
-    <a href ="http://127.0.0.1:5500/index.html" target="_blank">живий сайт</a> <br><br>   
+    <a href ="http://127.0.0.1:5502/index.html" target="_blank">живий сайт</a> <br><br>   
 
 СР_1:
     <a href ="https://github.com/Kynefa/Cp1" target="_blank">репозиторій</a> і
-    <a href ="http://127.0.0.1:5502/index.html" target="_blank">живий сайт</a> <br> <br> 
+    <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a> <br> <br> 
 Звіт_html:
     <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
     <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a> <br> <br> 
@@ -187,86 +187,38 @@ function content_load(buttonId) {
 </html></textarea> `;
             break;
         case 'btn4':
-            content = `<textarea rows="60" cols="115"><table>
-            <tr>
-                <th>Модель</th>
-                <th>тип</th>
-                <th>дальнобойность</th>
-                <th>точность</th>
-                <th>дополнительное снаряжение</th>
-                <th>начало експлоутации</th>
-            </tr>
-            <tr>
-                <td>M4 Carbine</td>
-                <td>Карабин</td>
-                <td>500-600 метров (эффективная)</td>
-                <td>Высокая на коротких и средних дистанциях</td>
-                <td>Оптические прицелы, глушитель, подствольный гранатомет M203, лазерные целеуказатели</td>
-                <td>1994 год</td>
-            </tr>
-            <tr>
-                <td>M16A4 Rifle</td>
-                <td>Автоматическая винтовка</td>
-                <td>550 метров (эффективная)</td>
-                <td>Высокая на средних и дальних дистанциях</td>
-                <td>Оптические прицелы ACOG, лазерные целеуказатели, глушитель</td>
-                <td>1997 год</td>
-            </tr>
-            <tr>
-                <td>M249 SAW (Squad Automatic Weapon)</td>
-                <td>Легкий пулемет</td>
-                <td>800 метров (эффективная)</td>
-                <td>Средняя</td>
-                <td>Оптический прицел, лазерные целеуказатели, складной сошник</td>
-                <td>1984 год</td>
-            </tr>
-            <tr>
-                <td>M2010 Enhanced Sniper Rifle</td>
-                <td>Снайперская винтовка</td>
-                <td>1200 метров (эффективная)</td>
-                <td>Очень высокая</td>
-                <td>Оптический прицел, глушитель ,  сошник</td>
-                <td>2010 год</td>
-            </tr>
-            <tr>
-                <td>M2010 Enhanced Sniper Rifle</td>
-                <td>Снайперская винтовка</td>
-                <td>1200 метров (эффективная)</td>
-                <td>Очень высокая</td>
-                <td>Оптический прицел, глушитель, сошник</td>
-                <td>2010 год</td>
-            </tr>
-        </table></textarea>
-        <img src="img/lab1/image.png" alt="" style= "width:1000px;">`;
+            content = `<textarea rows="60" cols="115">
+            <table style="width:100%">
+    <tr>
+      <th colspan="2">Ім'я</th>
+      <th>Вік</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>John</td>
+      <td>Doe</td>
+      <td>80</td>
+    </tr>
+  </table>
+            </textarea> `;
             break;
         case 'btn5':
             content = `<textarea rows="15" cols="80"><form>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Форма реєстрації</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Пароль</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <button type="submit" class="btn btn-primary">Зареєструватися</button>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
-        </div>
-      </div>
-    </div>
-  </div></textarea>`;
+            <form action='#'>
+    <input type="radio" name="gender" value="male" checked> Чоловік<br>
+    <input type="radio" name="gender" value="female"> Жінка<br>
+    <input type="radio" name="gender" value="other"> Інше<br>
+    <input type="submit" value="Відправити">
+</form></textarea>`;
             break;
         case 'btn6':
             content = `<textarea rows="1" cols="35"> <img src="lavander.jpg" alt=""></textarea>
