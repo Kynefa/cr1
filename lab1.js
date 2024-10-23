@@ -1,9 +1,8 @@
-const output = document.getElementsByClassName('output')[0]; 
+
 
 function content_load(buttonId) {
     let content = '';
-    
-  
+     
     switch (buttonId) {
         case 'btn1':
             content = `
@@ -19,11 +18,11 @@ function content_load(buttonId) {
 ЛР_1:
 
     <a href ="https://github.com/Kynefa/proj1" target="_blank">репозиторій</a>  і
-    <a href ="http://127.0.0.1:5502/index.html" target="_blank">живий сайт</a> <br><br>   
+    <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a> <br><br>   
 
 СР_1:
     <a href ="https://github.com/Kynefa/Cp1" target="_blank">репозиторій</a> і
-    <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a> <br> <br> 
+    <a href ="http://127.0.0.1:5508/index.html" target="_blank">живий сайт</a> <br> <br> 
 Звіт_html:
     <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
     <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a> <br> <br> 
@@ -187,8 +186,8 @@ function content_load(buttonId) {
 </html></textarea> `;
             break;
         case 'btn4':
-            content = `<textarea rows="60" cols="115">
-            <table style="width:100%">
+            content = `<textarea rows="30" cols="100">
+          
     <tr>
       <th colspan="2">Ім'я</th>
       <th>Вік</th>
@@ -209,20 +208,32 @@ function content_load(buttonId) {
       <td>80</td>
     </tr>
   </table>
-            </textarea> `;
+            </textarea>
+             
+        <img src="img/Screenshot_1.1.png" alt="Фото" width="1100">
+     `;
             break;
         case 'btn5':
             content = `<textarea rows="15" cols="80"><form>
             <form action='#'>
-    <input type="radio" name="gender" value="male" checked> Чоловік<br>
-    <input type="radio" name="gender" value="female"> Жінка<br>
-    <input type="radio" name="gender" value="other"> Інше<br>
-    <input type="submit" value="Відправити">
-</form></textarea>`;
+    <label for="fname">Ім’я:</label><br>
+    <input type="text" id="fname" name="fname" value=""><br>
+    <label for="lname">Прізвище:</label><br>
+   <input type="password" id="lname" name="lname" value=""><br><br>
+   <label for="cars">Обери марку машини:</label><br>
+   <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Mercedes</option>
+    <option value="fiat">BMW</option>
+    <option value="audi">Audi</option>
+    <input type="color" name="favcolor">
+</form></textarea>
+  <img src="img/Screenshot_2.2.png" alt="Фото" width="500">`;
             break;
         case 'btn6':
             content = `<textarea rows="1" cols="35"> <img src="lavander.jpg" alt=""></textarea>
-            <img src="img/lab1/img.png" alt="" style= "width:1000px;">`;
+            <img src="img/lab1/img.png" alt="" style= "width:1000px;">
+              <img src="img/Screenshot_4.png" alt="Фото" width="150">`;
             break;
         case 'btn7':
             content = `Я придбав практичні навички роботи  з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
@@ -233,7 +244,7 @@ function content_load(buttonId) {
             content = 'Нет информации';
     }
 
-
+    const output = document.getElementsByClassName('output')[0]; 
     output.innerHTML = content;
 }
 
@@ -241,5 +252,6 @@ function content_load(buttonId) {
 document.querySelectorAll('button').forEach(button => {
     button.addEventListener('click', (event) => {
         content_load(event.target.id); 
+        console.debug('addEventListener in lab1 ' + (index + 1));
     });
 });

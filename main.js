@@ -3,10 +3,8 @@ function loadLab(labNumber) {
     script.src = `lab${labNumber}.js`;
     document.body.appendChild(script);
 
-    // Оновлюємо меню в залежності від номера лабораторної роботи
     const menu = document.getElementById('lab-menu');
 
-    // Очищення існуючих пунктів меню
     menu.innerHTML = '';
 
     if (labNumber === 1) {
@@ -42,23 +40,56 @@ function loadLab(labNumber) {
             <li><button id="btn6" onclick="showDescription(6)">Фіксована блокова верстка</button></li>
             <li><button id="btn7" onclick="showDescription(7)">Гумова блокова верстка</button></li>
             <li><button id="btn8" onclick="showDescription(8)">Завдання №3 FLEXBOX</button></li>
-             <li><button id="btn8" onclick="showDescription(9)">Скріншот сторінки (FLEXBOX)</button></li>
-              <li><button id="btn8" onclick="showDescription(10)">HTML код (FLEXBOX)</button></li>
-               <li><button id="btn8" onclick="showDescription(11)">CSS код (FLEXBOX)</button></li>
-            <li><button id="btn9" onclick="showDescription(12)">Висновки</button></li>
+            <li><button id="btn9" onclick="showDescription(9)">Скріншот сторінки (FLEXBOX)</button></li>
+            <li><button id="btn10" onclick="showDescription(10)">HTML код (FLEXBOX)</button></li>
+            <li><button id="btn11" onclick="showDescription(11)">CSS код (FLEXBOX)</button></li>
+            <li><button id="btn12" onclick="showDescription(12)">Висновки</button></li>
         `;
+
     }
-    // Додавання активного класу до натиснутої кнопки
+    else if (labNumber === 4) {
+        menu.innerHTML = `
+            <li><button id="btn1" onclick="showDescription(1)">Тема, Мета ЛР4, Місце розташування сайту, звіту</button></li>
+            <li><button id="btn2" onclick="showDescription(2)">Адаптивні верстки </button></li>
+            <li><button id="btn3" onclick="showDescription(3)">Десктопної версії</button></li>
+            <li><button id="btn4" onclick="showDescription(4)">Планшетної версії</button></li>
+            <li><button id="btn5" onclick="showDescription(5)">Мобільної версії</button></li>
+            <li><button id="btn6" onclick="showDescription(6)">Логічні оператори</button></li>
+            <li><button id="btn7" onclick="showDescription(7)">Висновки</button></li>
+        `;
+
+    }
     const labButtons = document.querySelectorAll('.all_labs button');
     labButtons.forEach(button => {
         button.classList.remove('active');
     });
     labButtons[labNumber - 1].classList.add('active');
+
+    let menuButtons = menu.querySelectorAll('button');
+    removeAllEventListeners(menuButtons);
+
+    menuButtons = menu.querySelectorAll('button');
+    menuButtons.forEach((button, index) => {
+        button.addEventListener('click', () => showDescription(index + 1));
+        console.debug('addEventListener in main ' + (index + 1));
+    });
 }
 
 function showDescription(buttonId) {
     const output = document.querySelector('.output p');
-    output.textContent = `Ви вибрали кнопку з ID: ${buttonId}`; // Змінюйте текст у секції output
+    if (output) {
+        output.textContent = `Ви вибрали кнопку з ID: ${buttonId}`;
+    }
     content_load('btn' + buttonId);
+}
+
+function removeAllEventListeners(menuButtons) {
+    console.debug('removeAllEventListeners', menuButtons);
+    if (!menuButtons) return;
+    menuButtons.forEach((button, index) => {
+        console.debug('removeAllEventListeners');
+        var new_element = button.cloneNode(true);
+        button.parentNode.replaceChild(new_element, button);
+    });
 }
 

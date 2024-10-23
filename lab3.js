@@ -1,5 +1,3 @@
-const output = document.getElementsByClassName('output')[0];
-
 function content_load(buttonId) {
     let content = '';
 
@@ -16,27 +14,204 @@ function content_load(buttonId) {
 ⎯	придбати практичні навички роботи  верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясувати переваги та недоліки типів макетів веб-сторінок
 ⎯	придбати практичні навички роботи  верстки сторінок засобами CSS та FLEXBOX   
             </p>
-            <h3>ЛР_3</h3>
-            <a href ="https://github.com/Kynefa/proj1" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5500/index.html" target="_blank">живий сайт</a>
-            <h3>Звіт_html:</h3>
+            <h3>ЛР_3:</h3>
+            <a href ="https://github.com/Kynefa/Lp3_3" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5502/index.html" target="_blank">живий сайт</a>
+           <h3>Сайт:</h3>
+            <a href ="https://github.com/Kynefa/proj1_2" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a>
+            <h3>Звіт:</h3>
             <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
             <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a>
             `;
             break;
         case 'btn2':
-            content = `
+            content = `<textarea rows="80" cols="80">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TODO: use correct title -->
+    <title>Flower Shop</title>
+    <link rel="stylesheet" href="style copy.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
 
-            
+<body>
+    <header>
+        <div class="first">
+            <div class="flower">
+                <img src="" alt="image"></img>
+            </div>
+            <div id="company-name">
+                <p>
+                    Company name
+                </p>
+            </div>
+        </div>
+
+        <div class="top-nav-menu">
+            <div class="top-nav-menu-item">
+                <a href="./index.html">Головна</a>
+            </div>
+            <div class="top-nav-menu-item">
+                <a class="dropdown menu" href="#" role="button" id="categoryDropdown" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Категорія товарів
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                    <li><a class="dropdown-item" href="./cactus.html">Домашні рослини</a></li>
+                    <li><a class="dropdown-item" href="./cactus.html">Кактуси</a></li>
+                    <li><a class="dropdown-item" href="./cactus.html">Бамбук</a></li>
+                    <li><a class="dropdown-item" href="./cactus.html">Бонсай</a></li>
+                </ul>
+            </div>
+            <div class="top-nav-menu-item">
+                <a href="./contact.html">Контакти</a>
+            </div>
+            <div class="top-nav-menu-item">
+                <a href="https://g.co/kgs/JFPw6Rg">Про нас</a>
+            </div>
+
+            <div class="top-nav-menu-item last">
+                <button type="button" id="registerButton" class="" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <i class=""></i> Зареєструватися
+                </button>
+            </div>
+        </div>
+
+    </header>
+
+    <div class="content">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="" class="" alt="Кактуси">
+                    <div class="carousel-caption">
+                        <h5 id="h5cactus">Кактуси</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topCharts-header">
+            <h3>Найпопулярніші товари:</h3>
+        </div>
+
+        <div class="topCharts">
+            <div class="card">
+                <div class="">Лаванда</div>
+                <div class="card-body">
+                    <img class="foto" src="" alt="image">
+                    <p class="">
+                        <label>
+                            50 грн.
+                        </label>
+                        <button type="button" class="">Купити</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="">Кактус</div>
+                <div class="card-body">
+                    <img class="foto" src="" alt="image">
+                    <p class="">
+                        <label>
+                            50 грн.
+                        </label>
+                        <button type="button" class="">Купити</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="">Бамбук</div>
+                <div class="card-body">
+                    <img class="foto" src="" alt="image">
+                    <p class="">
+                        <label>
+                            50 грн.
+                        </label>
+                        <button type="button" class="">Купити</button>
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="">Бонсай</div>
+                <div class="card-body">
+                    <img class="foto" src="" alt="image">
+                    <p class="">
+                        <label>
+                            50 грн.
+                        </label>
+                        <button type="button" class="">Купити</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="welcome">
+            <p>
+        </div>
+
+        <div class="topCharts-header">
+            <h3>Корисні поради:</h3>
+        </div>
+
+        <div class="newspaper">
+            <p>
+            <h5 style="text-align: center;">Lorem, ipsum dolor.</h5>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit at debitis officia ipsum voluptatibus blanditiis, iusto ex dolores ad! Magni, ipsam nobis maiores sapiente voluptate perferendis odit modi est ipsum dicta corrupti tempora labore, soluta omnis atque sed iusto inventore!
+            </p>
+            <p>
+            <h5 style="text-align: center;">Lorem, ipsum dolor.</h5>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, fuga? Delectus animi commodi nobis necessitatibus accusamus asperiores reprehenderit voluptate, at labore distinctio voluptates molestiae enim, temporibus sunt magnam nesciunt, architecto unde perspiciatis est qui dolor amet ipsa culpa assumenda? Nobis maxime minima fuga illum, qui enim. Maxime dignissimos earum error.
+            </p>
+            <p>
+            <h5 style="text-align: center;">Lorem, ipsum dolor.</h5>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odit? Cupiditate blanditiis dicta laboriosam quidem aut nulla illum soluta, molestias veritatis quaerat pariatur facere debitis quam consequatur aperiam laudantium provident! Obcaecati maiores itaque quas nemo distinctio voluptas enim illum dolor, deleniti odio hic veritatis sed eligendi, laboriosam praesentium impedit quisquam!
+            </p>
+        </div>
+    </div>
+    <footer>
+        <a href="" target="_blank" class="social-icon instagram">
+            <i class="bi bi-instagram"></i>
+        </a>
+
+        <a href="https://t.me/" target="_blank" class="social-icon telegram">
+            <i class="bi bi-telegram"></i>
+        </a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
+ </textarea> <br>
+            <img src="img/Screenshot_9.png" alt="Фото" width="900"><br>
+            <img src="img/Screenshot_10.png" alt="Фото" width="900">
             `;
             break;
         case 'btn3':
             content = `
-            
-            `;
+             <h3>Фіксовна/гумова таблична верстка:</h3>
+            <a href ="https://github.com/Kynefa/----------3" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5505/index.html" target="_blank">живий сайт</a><br>
+             <a href ="https://github.com/Kynefa/----------3" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5505/index2.html" target="_blank">живий сайт</a>
+             <h3>Фіксовна/гумова блочна верстка:</h3>
+            <a href ="https://github.com/Kynefa/Lp3-2-" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5503/index.html" target="_blank">живий сайт</a><br>
+            <a href ="https://github.com/Kynefa/gnych.block.verst" target="_blank">репозиторій</a> і
+            <a href ="http://127.0.0.1:5504/index.html" target="_blank">живий сайт</a>
+           `;
             break;
         case 'btn4':
-            content = `<textarea rows="155" cols="100">
+            content = `<textarea rows="54" cols="80">
           &lt;!DOCTYPE html&gt;
 &lt;html lang="ru"&gt;
 &lt;head&gt;
@@ -90,10 +265,11 @@ th, td {
     width: 300px;
     border: 1px solid black;
 }</p>
-            </textarea> `;
+            </textarea> 
+          <img src="img/Screenshot_7.png" alt="Фото" width="600">`;
             break;
 case 'btn5':
-            content = `<textarea rows="155" cols="100">
+            content = `<textarea rows="100" cols="100">
           <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -211,9 +387,10 @@ tr.middle {
         min-width: 250px;
     }
 }
-</textarea> `; break
+</textarea> 
+<img src="img/adaptuvna.png" alt="Фото" width="500">`; break
         case 'btn6':
-            content = `<textarea rows="155" cols="100">
+            content = `<textarea rows="50" cols="80">
            <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -242,10 +419,11 @@ tr.middle {
 </body>
 </html>
            
-             </textarea> `;
+             </textarea> 
+             <img src="img/Screenshot_8.png" alt="Фото" width="600">`;
             break;
         case 'btn7':
-            content = `<textarea rows="155" cols="100">
+            content = `<textarea rows="50" cols="80">
         <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -280,7 +458,8 @@ tr.middle {
     </div>
 </body>
 </html>
-             </textarea> `;
+             </textarea> 
+             <img src="img/fix.block.png" alt="Фото" width="600">`;
             break;
             case 'btn8':
                 content =`<textarea rows="155" cols="100">
@@ -668,10 +847,18 @@ h1 {
             Придбали практичні навички роботи  верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясували переваги та недоліки типів макетів веб-сторінок, придбали практичні навички роботи  верстки сторінок засобами CSS та FLEXBOX   
 
                `;
-            break;
-        default:
-            content = '<p>Виберіть пункт меню, щоб відобразити опис.</p>';
-    }
+               break;
+               default:
+                   content = '<p>Виберіть пункт меню, щоб відобразити опис.</p>';
+           }
+       
 
+    const output = document.getElementsByClassName('output')[0];
+    
     output.innerHTML = content; 
+    document.querySelectorAll('button').forEach(button => {
+        button.addEventListener('click', (event) => {
+            content_load(event.target.id); 
+        });
+    });
 }
