@@ -14,7 +14,7 @@ function content_load(buttonId) {
 
             </p>
             <h3>ЛР_4:</h3>
-            <a href ="https://github.com/Kynefa/Lp3_3" target="_blank">репозиторій</a> і
+            <a href ="https://github.com/Kynefa/proj1_2" target="_blank">репозиторій</a> і
             <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a>
             <h3>Звіт:</h3>
             <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
