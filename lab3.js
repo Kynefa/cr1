@@ -268,7 +268,7 @@ th, td {
             </textarea> 
           <img src="img/Screenshot_7.png" alt="Фото" width="600">`;
             break;
-case 'btn5':
+        case 'btn5':
             content = `<textarea rows="100" cols="100">
           <!DOCTYPE html>
 <html lang="ru">
@@ -461,16 +461,16 @@ tr.middle {
              </textarea> 
              <img src="img/fix.block.png" alt="Фото" width="600">`;
             break;
-            case 'btn8':
-                content =`<textarea rows="155" cols="100">
+        case 'btn8':
+            content = `<textarea rows="155" cols="100">
                    
                  </textarea> `;
-                 case 'btn9':
-                    content = `
+        case 'btn9':
+            content = `
                         <img src="img/Screenshot_2.png" alt="Скріншот" style="width:100%; height:auto;">
                     `;
-                    break;
-            case 'btn10':
+            break;
+        case 'btn10':
             content = `<textarea rows="155" cols="100">
             <!DOCTYPE html>
 <html lang="en">
@@ -602,7 +602,7 @@ tr.middle {
 </html>
                </textarea> `;
             break;
-            case 'btn11':
+        case 'btn11':
             content = `<textarea rows="155" cols="100">
                font-family: Arial, sans-serif;
     margin: 0;
@@ -842,23 +842,17 @@ h1 {
 }
                </textarea> `;
             break;
-            case 'btn12':
+        case 'btn12':
             content = `
             Придбали практичні навички роботи  верстки сторінок засобами CSS, верстки на основі плаваючих елементів, з’ясували переваги та недоліки типів макетів веб-сторінок, придбали практичні навички роботи  верстки сторінок засобами CSS та FLEXBOX   
 
                `;
-               break;
-               default:
-                   content = '<p>Виберіть пункт меню, щоб відобразити опис.</p>';
-           }
-       
+            break;
+        default:
+            content = '<p>Виберіть пункт меню, щоб відобразити опис.</p>';
+    }
+
 
     const output = document.getElementsByClassName('output')[0];
-    
-    output.innerHTML = content; 
-    document.querySelectorAll('button').forEach(button => {
-        button.addEventListener('click', (event) => {
-            content_load(event.target.id); 
-        });
-    });
+    output.innerHTML = content;
 }

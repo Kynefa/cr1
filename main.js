@@ -3,6 +3,8 @@ function loadLab(labNumber) {
     script.src = `lab${labNumber}.js`;
     document.body.appendChild(script);
 
+    clearOutput(labNumber);
+
     const menu = document.getElementById('lab-menu');
 
     menu.innerHTML = '';
@@ -17,7 +19,8 @@ function loadLab(labNumber) {
             <li><button id="btn6" onclick="showDescription(6)">HTML код ЗОБРАЖЕННЯ</button></li>
             <li><button id="btn7" onclick="showDescription(7)">ВИСНОВКИ</button></li>
         `;
-    } else if (labNumber === 2) {
+    }
+    else if (labNumber === 2) {
         menu.innerHTML = `
             <li><button id="btn1" onclick="showDescription(1)">Тема, Мета ЛР2, Місце розташування сайту, звіту</button></li>
             <li><button id="btn2" onclick="showDescription(2)">Способи підключення стилів</button></li>
@@ -51,9 +54,9 @@ function loadLab(labNumber) {
         menu.innerHTML = `
             <li><button id="btn1" onclick="showDescription(1)">Тема, Мета ЛР4, Місце розташування сайту, звіту</button></li>
             <li><button id="btn2" onclick="showDescription(2)">Адаптивні верстки </button></li>
-            <li><button id="btn3" onclick="showDescription(3)">Десктопної версії</button></li>
-            <li><button id="btn4" onclick="showDescription(4)">Планшетної версії</button></li>
-            <li><button id="btn5" onclick="showDescription(5)">Мобільної версії</button></li>
+            <li><button id="btn3" onclick="showDescription(3)">Десктопна версія</button></li>
+            <li><button id="btn4" onclick="showDescription(4)">Планшетна версія</button></li>
+            <li><button id="btn5" onclick="showDescription(5)">Мобільна версія</button></li>
             <li><button id="btn6" onclick="showDescription(6)">Логічні оператори</button></li>
             <li><button id="btn7" onclick="showDescription(7)">Висновки</button></li>
         `;
@@ -64,32 +67,14 @@ function loadLab(labNumber) {
         button.classList.remove('active');
     });
     labButtons[labNumber - 1].classList.add('active');
-
-    let menuButtons = menu.querySelectorAll('button');
-    removeAllEventListeners(menuButtons);
-
-    menuButtons = menu.querySelectorAll('button');
-    menuButtons.forEach((button, index) => {
-        button.addEventListener('click', () => showDescription(index + 1));
-        console.debug('addEventListener in main ' + (index + 1));
-    });
 }
 
-function showDescription(buttonId) {
-    const output = document.querySelector('.output p');
-    if (output) {
-        output.textContent = `Ви вибрали кнопку з ID: ${buttonId}`;
-    }
-    content_load('btn' + buttonId);
+
+function clearOutput(labNumber) {
+    const output = document.getElementsByClassName('output')[0];
+    output.innerHTML = `Ви вибрали лабораторну роботу № ${labNumber}`;
 }
 
-function removeAllEventListeners(menuButtons) {
-    console.debug('removeAllEventListeners', menuButtons);
-    if (!menuButtons) return;
-    menuButtons.forEach((button, index) => {
-        console.debug('removeAllEventListeners');
-        var new_element = button.cloneNode(true);
-        button.parentNode.replaceChild(new_element, button);
-    });
+function showDescription(buttonIndex) {
+    content_load('btn' + buttonIndex);
 }
-

@@ -142,8 +142,8 @@ font-size: large;
             </p>
             `;
             break;
-            case 'btn8':
-                content =`
+        case 'btn8':
+            content = `
                     <p>
                         font-size: 17px;<br>
                         margin-left: 150px;<br>
@@ -202,7 +202,7 @@ font-size: large;
         default:
             content = '<p>Виберіть пункт меню, щоб відобразити опис.</p>';
     }
-    
+
     const output = document.getElementsByClassName('output')[0];
     output.innerHTML = content; // Встановлюємо HTML контент в секцію output
 }

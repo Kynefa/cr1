@@ -2,7 +2,7 @@
 
 function content_load(buttonId) {
     let content = '';
-     
+
     switch (buttonId) {
         case 'btn1':
             content = `
@@ -244,14 +244,6 @@ function content_load(buttonId) {
             content = 'Нет информации';
     }
 
-    const output = document.getElementsByClassName('output')[0]; 
+    const output = document.getElementsByClassName('output')[0];
     output.innerHTML = content;
 }
-
-
-document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click', (event) => {
-        content_load(event.target.id); 
-        console.debug('addEventListener in lab1 ' + (index + 1));
-    });
-});
