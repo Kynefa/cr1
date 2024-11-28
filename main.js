@@ -62,6 +62,18 @@ function loadLab(labNumber) {
         `;
 
     }
+    else if (labNumber === 5) {
+        menu.innerHTML = `
+            <li><button id="btn1" onclick="showDescription(1)">Тема, Мета ЛР5, Місце розташування сайту, звіту</button></li>
+            <li><button id="btn2" onclick="showDescription(2)">Завдання №1 </button></li>
+            <li><button id="btn3" onclick="showDescription(3)">Завдання №2</button></li>
+            <li><button id="btn4" onclick="showDescription(4)">Завдання №3</button></li>
+            <li><button id="btn5" onclick="showDescription(5)">Завдання №4</button></li>
+            <li><button id="btn6" onclick="showDescription(6)">Завдання №5</button></li>
+            <li><button id="btn7" onclick="showDescription(7)">Висновки</button></li>
+        `;
+
+    }
     const labButtons = document.querySelectorAll('.all_labs button');
     labButtons.forEach(button => {
         button.classList.remove('active');
