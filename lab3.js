@@ -22,7 +22,7 @@ function content_load(buttonId) {
             <a href ="https://kynefa.github.io/proj1_2/" target="_blank">живий сайт</a>
             <h3>Звіт:</h3>
             <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a>
+            <a href ="https://kynefa.github.io/zvit/" target="_blank">живий сайт</a>
             `;
             break;
         case 'btn2':
@@ -200,14 +200,14 @@ function content_load(buttonId) {
             content = `
              <h3>Фіксовна/гумова таблична верстка:</h3>
             <a href ="https://github.com/Kynefa/----------3" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5505/index.html" target="_blank">живий сайт</a><br>
+            <a href ="https://kynefa.github.io/----------3/" target="_blank">живий сайт</a><br>
              <a href ="https://github.com/Kynefa/----------3" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5505/index2.html" target="_blank">живий сайт</a>
+            <a href ="https://kynefa.github.io/3table/" target="_blank">живий сайт</a>
              <h3>Фіксовна/гумова блочна верстка:</h3>
             <a href ="https://github.com/Kynefa/Lp3-2-" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5503/index.html" target="_blank">живий сайт</a><br>
+            <a href ="https://kynefa.github.io/Lp3-2-/" target="_blank">живий сайт</a><br>
             <a href ="https://github.com/Kynefa/gnych.block.verst" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5504/index.html" target="_blank">живий сайт</a>
+            <a href ="https://kynefa.github.io/gnych.block.verst/" target="_blank">живий сайт</a>
            `;
             break;
         case 'btn4':

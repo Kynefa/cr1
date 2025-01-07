@@ -25,7 +25,7 @@ function content_load(buttonId) {
     <a href ="https://kynefa.github.io/Cp1/" target="_blank">живий сайт</a> <br> <br> 
 Звіт_html:
     <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
-    <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a> <br> <br> 
+    <a href ="https://kynefa.github.io/zvit/" target="_blank">живий сайт</a> <br> <br> 
 `;
             break;
         case 'btn3':
