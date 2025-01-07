@@ -13,9 +13,12 @@ function content_load(buttonId) {
                 Мета: Адаптивна верстка. Медіа-запити. Медіа-типи. Медіа-функції.Метатег viewport. Інструменти розробника. Стратегія Mobile First. 
 
             </p>
-            <h3>ЛР_4:</h3>
-            <a href ="https://github.com/Kynefa/proj1_2" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a>
+            <h3>ЛР_4:</h3> 
+            <a href ="https://github.com/Kynefa/proj1_2" target="_blank">репозиторій</a> 
+            <a href ="https://kynefa.github.io/proj1_2/" target="_blank">живий сайт</a>
+            <h3>Фіксовата таблична верстка:</h3> <a href ="https://kynefa.github.io/----------3/" target="_blank">репозиторій</a> <h3>Адаптивна таблична верстка:</h3> <a href ="https://kynefa.github.io/3table/" target="_blank">репозиторій</a> 
+             <h3>Фіксовата блокова верстка:</h3> <a href ="https://kynefa.github.io/Lp3-2-/" target="_blank">репозиторій</a> 
+            <h3>Гнучка блокова верстка:</h3> <a href ="https://kynefa.github.io/gnych.block.verst/" target="_blank">репозиторій</a> 
             <h3>Звіт:</h3>
             <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
             <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a>

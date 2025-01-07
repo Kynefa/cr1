@@ -17,10 +17,10 @@ function content_load(buttonId) {
             </p>
             <h3>ЛР_2:</h3>
             <a href ="https://github.com/Kynefa/proj1_2" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a>
+            <a href ="https://kynefa.github.io/proj1_2/" target="_blank">живий сайт</a>
             <h3>СР_2:</h3>
             <a href ="https://github.com/Kynefa/Cp2" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5509/index.html" target="_blank">живий сайт</a>
+            <a href ="https://kynefa.github.io/Cp2/" target="_blank">живий сайт</a>
             <h3>Звіт_html:</h3>
             <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
             <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a>

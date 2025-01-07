@@ -19,7 +19,7 @@ function content_load(buttonId) {
             <a href ="http://127.0.0.1:5502/index.html" target="_blank">живий сайт</a>
            <h3>Сайт:</h3>
             <a href ="https://github.com/Kynefa/proj1_2" target="_blank">репозиторій</a> і
-            <a href ="http://127.0.0.1:5506/index.html" target="_blank">живий сайт</a>
+            <a href ="https://kynefa.github.io/proj1_2/" target="_blank">живий сайт</a>
             <h3>Звіт:</h3>
             <a href ="https://github.com/Kynefa/zvit" target="_blank">репозиторій</a> і
             <a href ="http://127.0.0.1:5501/index.html" target="_blank">живий сайт</a>
